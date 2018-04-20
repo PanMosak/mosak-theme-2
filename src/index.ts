@@ -20,7 +20,7 @@ const plugin: JupyterLabPlugin<void> = {
     manager.register({
       name: 'Mosak Dark',
       load: function() {
-        return manager.loadCSS('mosak-theme/index.css');
+        return manager.loadCSS('mosak-theme/style/index.css');
       },
       unload: function() {
         return Promise.resolve(void 0);
