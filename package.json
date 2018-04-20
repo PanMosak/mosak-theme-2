@@ -1,0 +1,57 @@
+{
+  "name": "mosak-theme",
+  "version": "1.0.0",
+  "description": "A JupyterLab theme extension which provides the default dark-colored theme.",
+  "files": [
+    "lib/*.d.ts",
+    "lib/*.js.map",
+    "lib/*.js",
+    "static/index.css",
+    "static/*.ttf"
+  ],
+  "directories": {
+    "lib": "lib/"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "run-p build:**",
+    "build:typescript": "tsc",
+    "build:webpack": "webpack",
+    "clean": "rimraf lib",
+    "prepublishOnly": "npm run build",
+    "watch": "run-p watch:**",
+    "watch:typescript": "tsc -w",
+    "watch:webpack": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PanMosak/mosak-theme-2.git"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^0.16.2",
+    "@jupyterlab/apputils": "^0.16.3",
+    "font-awesome": "~4.7.0"
+  },
+  "devDependencies": {
+    "css-loader": "~0.28.7",
+    "extract-text-webpack-plugin": "~2.1.2",
+    "npm-run-all": "~4.1.1",
+    "rimraf": "~2.6.2",
+    "svg-url-loader": "~2.3.1",
+    "svgo": "~1.0.4",
+    "svgo-loader": "~2.1.0",
+    "typescript": "~2.6.2",
+    "url-loader": "~0.5.9",
+    "webpack": "~2.7.0"
+  },
+  "jupyterlab": {
+    "extension": true,
+    "themeDir": "static"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PanMosak/mosak-theme-2/issues"
+  },
+  "homepage": "https://github.com/PanMosak/mosak-theme-2#readme"
+}
