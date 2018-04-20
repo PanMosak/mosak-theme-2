@@ -14,13 +14,13 @@ import {
  * A plugin for the Jupyter Dark Theme.
  */
 const plugin: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/theme-dark-extension:plugin',
+  id: '@mosak/theme-mosak-extension:plugin',
   requires: [IThemeManager],
   activate: function(app: JupyterLab, manager: IThemeManager) {
     manager.register({
-      name: 'JupyterLab Dark',
+      name: 'Mosak Dark',
       load: function() {
-        return manager.loadCSS('@jupyterlab/theme-dark-extension/index.css');
+        return manager.loadCSS('@mosak/theme-mosak-extension/index.css');
       },
       unload: function() {
         return Promise.resolve(void 0);
