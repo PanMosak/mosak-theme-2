@@ -46,7 +46,7 @@
   },
   "jupyterlab": {
     "extension": true,
-    "themeDir": "static"
+    "themeDir": "style"
   },
   "author": "",
   "license": "ISC",
