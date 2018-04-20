@@ -1,6 +1,6 @@
 {
   "name": "mosak-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A JupyterLab theme extension which provides the default dark-colored theme.",
   "files": [
     "lib/*.d.ts",
