@@ -6,11 +6,12 @@
     "lib/*.d.ts",
     "lib/*.js.map",
     "lib/*.js",
-    "static/index.css",
-    "static/*.ttf"
+    "style/index.css",
+    "style/*.ttf"
   ],
   "directories": {
-    "lib": "lib/"
+    "lib": "lib/",
+    "style": "style/"
   },
   "main": "lib/index.js",
   "scripts": {
